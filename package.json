@@ -1,0 +1,41 @@
+{
+  "name": "eve-server",
+  "version": "0.0.1",
+  "main": "./dist/index.js",
+  "types": "./dist/src/index.d.ts",
+  "license": "UNLICENSED",
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "npm run type-check -- --watch",
+    "build": "tsc",
+    "start": "npm run build && node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/craigulliott/crypto.git"
+  },
+  "author": {
+    "name": "Craig Ulliott",
+    "email": "craigulliott@gmail.com"
+  },
+  "homepage": "https://www.craigulliott.com",
+  "devDependencies": {
+    "@types/uuid": "^8.3.0",
+    "@types/node": "^12.12.26",
+    "ts-loader": "^8.0.17",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.3",
+    "uuid": "^8.3.2"
+  },
+  "dependencies": {
+    "@types/cors": "^2.8.10",
+    "@types/express": "^4.17.12",
+    "@types/websocket": "^1.0.2",
+    "coinbase-pro-node": "^3.0.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "keypress": "^0.2.1",
+    "unirest": "^0.6.0",
+    "websocket": "^1.0.34"
+  }
+}
